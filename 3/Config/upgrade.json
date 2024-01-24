@@ -1,0 +1,117 @@
+{
+    "Castle": [
+        {
+            "cost": 0,
+            "strength": 1000
+        },
+        {
+            "cost": 500,
+            "strength": 1500
+        },
+        {
+            "cost": 1000,
+            "strength": 2000
+        }
+    ],
+    "Effect": {
+        "0": [
+            {
+                "time": 3,
+                "value": 5
+            },
+            {
+                "time": 5,
+                "value": 10
+            },
+            {
+                "time": 7,
+                "value": 15
+            }
+        ],
+        "2": [
+            {
+                "time": 3,
+                "value": 15
+            },
+            {
+                "time": 5,
+                "value": 30
+            },
+            {
+                "time": 7,
+                "value": 50
+            }
+        ],
+        "1": [
+            {
+                "time": 3,
+                "value": 15
+            },
+            {
+                "time": 5,
+                "value": 30
+            },
+            {
+                "time": 7,
+                "value": 50
+            }
+        ]
+    },
+    "MagicTower": [
+        {
+            "cost": 400,
+            "damage": 100,
+            "radius": 3,
+            "rate": 3
+        },
+        {
+            "cost": 500,
+            "damage": 125,
+            "radius": 4,
+            "rate": 4
+        },
+        {
+            "cost": 600,
+            "damage": 150,
+            "radius": 5,
+            "rate": 5
+        }
+    ],
+    "MagicTrap": [
+        {
+            "cost": 200,
+            "damage": 200,
+            "radius": 3
+        },
+        {
+            "cost": 300,
+            "damage": 250,
+            "radius": 4
+        },
+        {
+            "cost": 400,
+            "damage": 300,
+            "radius": 5
+        }
+    ],
+    "SimpleTower": [
+        {
+            "cost": 300,
+            "damage": 50,
+            "radius": 3,
+            "rate": 3
+        },
+        {
+            "cost": 400,
+            "damage": 60,
+            "radius": 4,
+            "rate": 4
+        },
+        {
+            "cost": 500,
+            "damage": 75,
+            "radius": 5,
+            "rate": 5
+        }
+    ]
+}

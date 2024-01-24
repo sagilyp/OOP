@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TOWER DEFENCE: Класс Enemy</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TOWER DEFENCE<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">towers and enemys</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classEnemy-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс Enemy</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a59634e3504b1234afadf9df5a1044a78" id="r_a59634e3504b1234afadf9df5a1044a78"><td class="memItemLeft" align="right" valign="top"><a id="a59634e3504b1234afadf9df5a1044a78" name="a59634e3504b1234afadf9df5a1044a78"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Enemy</b> ()=default</td></tr>
+<tr class="memdesc:a59634e3504b1234afadf9df5a1044a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию. Создает новый объект, инициализируя его по умолчанию <br /></td></tr>
+<tr class="separator:a59634e3504b1234afadf9df5a1044a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b9102cb4c9664e30dd77c92ebf2d170" id="r_a9b9102cb4c9664e30dd77c92ebf2d170"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEnemy.html#a9b9102cb4c9664e30dd77c92ebf2d170">Enemy</a> (const EnemyType &amp;t, size_t health, size_t g, size_t vel, size_t sz=0, std::pair&lt; int, int &gt; tr={0, 0})</td></tr>
+<tr class="memdesc:a9b9102cb4c9664e30dd77c92ebf2d170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор Создает новый объект, инициализируя его заданными значениями  <br /></td></tr>
+<tr class="separator:a9b9102cb4c9664e30dd77c92ebf2d170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7ab8f3adac5f88cc9e1147f76c739c9" id="r_ad7ab8f3adac5f88cc9e1147f76c739c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEnemy.html#ad7ab8f3adac5f88cc9e1147f76c739c9">Enemy</a> (const <a class="el" href="classEnemy.html">Enemy</a> &amp;other)=default</td></tr>
+<tr class="memdesc:ad7ab8f3adac5f88cc9e1147f76c739c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования. Создает новый объект, копируя значения из другого объекта того же типа.  <br /></td></tr>
+<tr class="separator:ad7ab8f3adac5f88cc9e1147f76c739c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca00fa2f20cea544f52beeb5aa1648f1" id="r_aca00fa2f20cea544f52beeb5aa1648f1"><td class="memItemLeft" align="right" valign="top"><a id="aca00fa2f20cea544f52beeb5aa1648f1" name="aca00fa2f20cea544f52beeb5aa1648f1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~Enemy</b> ()=default</td></tr>
+<tr class="memdesc:aca00fa2f20cea544f52beeb5aa1648f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. Уничтожает объект <br /></td></tr>
+<tr class="separator:aca00fa2f20cea544f52beeb5aa1648f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a499c44284150d928f7fdf3a2d6e6e7ee" id="r_a499c44284150d928f7fdf3a2d6e6e7ee"><td class="memItemLeft" align="right" valign="top"><a id="a499c44284150d928f7fdf3a2d6e6e7ee" name="a499c44284150d928f7fdf3a2d6e6e7ee"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getType</b> ()</td></tr>
+<tr class="memdesc:a499c44284150d928f7fdf3a2d6e6e7ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Геттер типа врага <br /></td></tr>
+<tr class="separator:a499c44284150d928f7fdf3a2d6e6e7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f6efd14306031701b2dbca37e6164b0" id="r_a7f6efd14306031701b2dbca37e6164b0"><td class="memItemLeft" align="right" valign="top"><a id="a7f6efd14306031701b2dbca37e6164b0" name="a7f6efd14306031701b2dbca37e6164b0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTrace</b> (std::pair&lt; int, int &gt; trc)</td></tr>
+<tr class="memdesc:a7f6efd14306031701b2dbca37e6164b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сеттер предыдущего местоположения врага <br /></td></tr>
+<tr class="separator:a7f6efd14306031701b2dbca37e6164b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f3e08b10105dd8647acecea1e0faa1" id="r_a45f3e08b10105dd8647acecea1e0faa1"><td class="memItemLeft" align="right" valign="top"><a id="a45f3e08b10105dd8647acecea1e0faa1" name="a45f3e08b10105dd8647acecea1e0faa1"></a>
+std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getTrace</b> () const</td></tr>
+<tr class="memdesc:a45f3e08b10105dd8647acecea1e0faa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Геттер предыдущего местоположения врага <br /></td></tr>
+<tr class="separator:a45f3e08b10105dd8647acecea1e0faa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81b9dd1cc71f625ee34f20e0a68c0974" id="r_a81b9dd1cc71f625ee34f20e0a68c0974"><td class="memItemLeft" align="right" valign="top"><a id="a81b9dd1cc71f625ee34f20e0a68c0974" name="a81b9dd1cc71f625ee34f20e0a68c0974"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxHealth</b> () const</td></tr>
+<tr class="memdesc:a81b9dd1cc71f625ee34f20e0a68c0974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Геттер максимального здоровья врага <br /></td></tr>
+<tr class="separator:a81b9dd1cc71f625ee34f20e0a68c0974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42cf135f6cf1ac54352de6edf1f13030" id="r_a42cf135f6cf1ac54352de6edf1f13030"><td class="memItemLeft" align="right" valign="top"><a id="a42cf135f6cf1ac54352de6edf1f13030" name="a42cf135f6cf1ac54352de6edf1f13030"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMaxHealth</b> (size_t health)</td></tr>
+<tr class="memdesc:a42cf135f6cf1ac54352de6edf1f13030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сеттер максимального здоровья врага <br /></td></tr>
+<tr class="separator:a42cf135f6cf1ac54352de6edf1f13030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1ee6fa841fc013437a853ce7c5dcef" id="r_a7f1ee6fa841fc013437a853ce7c5dcef"><td class="memItemLeft" align="right" valign="top"><a id="a7f1ee6fa841fc013437a853ce7c5dcef" name="a7f1ee6fa841fc013437a853ce7c5dcef"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getCurHealth</b> () const</td></tr>
+<tr class="memdesc:a7f1ee6fa841fc013437a853ce7c5dcef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Геттер текущего здоровья врага <br /></td></tr>
+<tr class="separator:a7f1ee6fa841fc013437a853ce7c5dcef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a162d5589ff48c3d56d932fd24b49838b" id="r_a162d5589ff48c3d56d932fd24b49838b"><td class="memItemLeft" align="right" valign="top"><a id="a162d5589ff48c3d56d932fd24b49838b" name="a162d5589ff48c3d56d932fd24b49838b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCurHealth</b> (int health)</td></tr>
+<tr class="memdesc:a162d5589ff48c3d56d932fd24b49838b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сеттер текущего здоровья <br /></td></tr>
+<tr class="separator:a162d5589ff48c3d56d932fd24b49838b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8181d230c8eb127c9462ee8b5bbe0abc" id="r_a8181d230c8eb127c9462ee8b5bbe0abc"><td class="memItemLeft" align="right" valign="top"><a id="a8181d230c8eb127c9462ee8b5bbe0abc" name="a8181d230c8eb127c9462ee8b5bbe0abc"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getCurVel</b> () const</td></tr>
+<tr class="memdesc:a8181d230c8eb127c9462ee8b5bbe0abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Геттер текущей скорости <br /></td></tr>
+<tr class="separator:a8181d230c8eb127c9462ee8b5bbe0abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c6a91dfec660f21c44ef9069f5a0fe" id="r_a76c6a91dfec660f21c44ef9069f5a0fe"><td class="memItemLeft" align="right" valign="top"><a id="a76c6a91dfec660f21c44ef9069f5a0fe" name="a76c6a91dfec660f21c44ef9069f5a0fe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCurVel</b> (size_t _velocity)</td></tr>
+<tr class="memdesc:a76c6a91dfec660f21c44ef9069f5a0fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сеттер текущего здоровья <br /></td></tr>
+<tr class="separator:a76c6a91dfec660f21c44ef9069f5a0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3726aed95a6830267e03be6fa1c0c3db" id="r_a3726aed95a6830267e03be6fa1c0c3db"><td class="memItemLeft" align="right" valign="top"><a id="a3726aed95a6830267e03be6fa1c0c3db" name="a3726aed95a6830267e03be6fa1c0c3db"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxVel</b> () const</td></tr>
+<tr class="memdesc:a3726aed95a6830267e03be6fa1c0c3db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Геттер максимальной скорости <br /></td></tr>
+<tr class="separator:a3726aed95a6830267e03be6fa1c0c3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad621e1d958be8f77055dcf16501e89" id="r_acad621e1d958be8f77055dcf16501e89"><td class="memItemLeft" align="right" valign="top"><a id="acad621e1d958be8f77055dcf16501e89" name="acad621e1d958be8f77055dcf16501e89"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMaxVel</b> (size_t _velocity)</td></tr>
+<tr class="memdesc:acad621e1d958be8f77055dcf16501e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сеттер максимального здоровья <br /></td></tr>
+<tr class="separator:acad621e1d958be8f77055dcf16501e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d7e760e1f9991fdce8ad684d773a91d" id="r_a5d7e760e1f9991fdce8ad684d773a91d"><td class="memItemLeft" align="right" valign="top"><a id="a5d7e760e1f9991fdce8ad684d773a91d" name="a5d7e760e1f9991fdce8ad684d773a91d"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getGold</b> ()</td></tr>
+<tr class="memdesc:a5d7e760e1f9991fdce8ad684d773a91d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Геттер золота врага <br /></td></tr>
+<tr class="separator:a5d7e760e1f9991fdce8ad684d773a91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eae06d8ee6c84e513c3cbd79ed53956" id="r_a9eae06d8ee6c84e513c3cbd79ed53956"><td class="memItemLeft" align="right" valign="top"><a id="a9eae06d8ee6c84e513c3cbd79ed53956" name="a9eae06d8ee6c84e513c3cbd79ed53956"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setGold</b> (size_t g)</td></tr>
+<tr class="memdesc:a9eae06d8ee6c84e513c3cbd79ed53956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сеттер золота врага <br /></td></tr>
+<tr class="separator:a9eae06d8ee6c84e513c3cbd79ed53956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4e4f5b2be9701dc0b614866d2c2a5c3" id="r_ac4e4f5b2be9701dc0b614866d2c2a5c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEnemy.html#ac4e4f5b2be9701dc0b614866d2c2a5c3">pushEff</a> (const <a class="el" href="classEffect.html">Effect</a> &amp;effect)</td></tr>
+<tr class="memdesc:ac4e4f5b2be9701dc0b614866d2c2a5c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Помещение эффекта в вектор эффектов  <br /></td></tr>
+<tr class="separator:ac4e4f5b2be9701dc0b614866d2c2a5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f2cfe6b1846fae6324906b17247566b" id="r_a3f2cfe6b1846fae6324906b17247566b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEnemy.html#a3f2cfe6b1846fae6324906b17247566b">effAct</a> (size_t qnt=0)</td></tr>
+<tr class="memdesc:a3f2cfe6b1846fae6324906b17247566b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Активация эффекта Действует эффектом на врага  <br /></td></tr>
+<tr class="separator:a3f2cfe6b1846fae6324906b17247566b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91720607ea53b919da26dbe04a0fc820" id="r_a91720607ea53b919da26dbe04a0fc820"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEnemy.html#a91720607ea53b919da26dbe04a0fc820">move</a> (<a class="el" href="classGame.html">Game</a> &amp;game)</td></tr>
+<tr class="memdesc:a91720607ea53b919da26dbe04a0fc820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Соверешение хода врагом Меняет местоположение врага  <br /></td></tr>
+<tr class="separator:a91720607ea53b919da26dbe04a0fc820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a358b5f52b27346af620434f519b1a3a9" id="r_a358b5f52b27346af620434f519b1a3a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEnemy.html#a358b5f52b27346af620434f519b1a3a9">kill</a> (<a class="el" href="classLandscape.html">Landscape</a> &amp;land)</td></tr>
+<tr class="memdesc:a358b5f52b27346af620434f519b1a3a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Убицство врага Начисляет деньги замку  <br /></td></tr>
+<tr class="separator:a358b5f52b27346af620434f519b1a3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a9b9102cb4c9664e30dd77c92ebf2d170" name="a9b9102cb4c9664e30dd77c92ebf2d170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b9102cb4c9664e30dd77c92ebf2d170">&#9670;&#160;</a></span>Enemy() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Enemy::Enemy </td>
+          <td>(</td>
+          <td class="paramtype">const EnemyType &amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>health</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>vel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>sz</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::pair&lt; int, int &gt;&#160;</td>
+          <td class="paramname"><em>tr</em> = <code>{0,0}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор Создает новый объект, инициализируя его заданными значениями </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>тип врага </td></tr>
+    <tr><td class="paramname">health</td><td>здоровье </td></tr>
+    <tr><td class="paramname">g</td><td>золото </td></tr>
+    <tr><td class="paramname">vel</td><td>скорость передвижения </td></tr>
+    <tr><td class="paramname">sz</td><td>размер вектора эффектов </td></tr>
+    <tr><td class="paramname">tr</td><td>след врага - координаты врага, на которых он уже находился </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad7ab8f3adac5f88cc9e1147f76c739c9" name="ad7ab8f3adac5f88cc9e1147f76c739c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7ab8f3adac5f88cc9e1147f76c739c9">&#9670;&#160;</a></span>Enemy() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Enemy::Enemy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classEnemy.html">Enemy</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор копирования. Создает новый объект, копируя значения из другого объекта того же типа. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Ссылка на объект для копирования. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a3f2cfe6b1846fae6324906b17247566b" name="a3f2cfe6b1846fae6324906b17247566b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f2cfe6b1846fae6324906b17247566b">&#9670;&#160;</a></span>effAct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Enemy::effAct </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>qnt</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Активация эффекта Действует эффектом на врага </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qnt</td><td>Величина урона, нанеченного врагу </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a358b5f52b27346af620434f519b1a3a9" name="a358b5f52b27346af620434f519b1a3a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a358b5f52b27346af620434f519b1a3a9">&#9670;&#160;</a></span>kill()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Enemy::kill </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classLandscape.html">Landscape</a> &amp;&#160;</td>
+          <td class="paramname"><em>land</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Убицство врага Начисляет деньги замку </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">land</td><td>ссылка на объект ландшафта </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a91720607ea53b919da26dbe04a0fc820" name="a91720607ea53b919da26dbe04a0fc820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91720607ea53b919da26dbe04a0fc820">&#9670;&#160;</a></span>move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Enemy::move </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGame.html">Game</a> &amp;&#160;</td>
+          <td class="paramname"><em>game</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Соверешение хода врагом Меняет местоположение врага </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">game</td><td>ссылка на объект игры для получения и изменения информации </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac4e4f5b2be9701dc0b614866d2c2a5c3" name="ac4e4f5b2be9701dc0b614866d2c2a5c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4e4f5b2be9701dc0b614866d2c2a5c3">&#9670;&#160;</a></span>pushEff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Enemy::pushEff </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classEffect.html">Effect</a> &amp;&#160;</td>
+          <td class="paramname"><em>effect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Помещение эффекта в вектор эффектов </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">effect</td><td>Ссылка на объект эффекта </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Entity/<a class="el" href="Enemy_8h_source.html">Enemy.h</a></li>
+<li>Entity/<b>Enemy.cpp</b></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

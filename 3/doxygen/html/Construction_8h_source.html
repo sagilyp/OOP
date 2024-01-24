@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TOWER DEFENCE: Исходный файл Entity/Construction.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TOWER DEFENCE<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">towers and enemys</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a625c670f828dfaff80322b07e1365a6.html">Entity</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Construction.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#ifndef OOP_LAB3_CONSTRUCTION_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#define OOP_LAB3_CONSTRUCTION_H</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;queue&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span><a class="code hl_class" href="classGame.html">Game</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span><a class="code hl_class" href="classLandscape.html">Landscape</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;Enemy.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classConstruction.html">   16</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classConstruction.html">Construction</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordtype">size_t</span> level = 0;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classConstruction.html#af82f77e72211da9b22866ac7897cb457">   24</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="classConstruction.html#af82f77e72211da9b22866ac7897cb457">getLevel</a>(){<span class="keywordflow">return</span> level;}</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classConstruction.html#a0dc9043acb73342166d8562d892b7f97">   30</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classConstruction.html#a0dc9043acb73342166d8562d892b7f97">setLevel</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp; lvl){level = lvl;}</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classConstruction.html#acd52d413e9077b7ed4f2097401565e3e">   34</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classConstruction.html#acd52d413e9077b7ed4f2097401565e3e">improve</a>(<span class="keyword">const</span> <a class="code hl_class" href="classGame.html">Game</a>&amp;) = 0;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    };</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classCastle.html">   37</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classCastle.html">Castle</a> : <span class="keyword">public</span> <a class="code hl_class" href="classConstruction.html">Construction</a> {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        std::string name;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordtype">int</span> gold;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordtype">size_t</span> maxStrength;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordtype">size_t</span> curStrength;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classCastle.html#ab5a57307b5e4c8ecb6f8f0524684e6d6">   48</a></span>        <a class="code hl_function" href="classCastle.html#ab5a57307b5e4c8ecb6f8f0524684e6d6">Castle</a>():gold(0), maxStrength(0), curStrength(0){};</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classCastle.html#a5d9e51e72035353d871e61cb1a4edcd3">   56</a></span>        <a class="code hl_function" href="classCastle.html#a5d9e51e72035353d871e61cb1a4edcd3">Castle</a>(<span class="keyword">const</span> std::string&amp; _name, <span class="keyword">const</span> <span class="keywordtype">int</span> _gold, <span class="keyword">const</span> <span class="keywordtype">size_t</span> _health): name(_name), gold(_gold), maxStrength(_health), curStrength(_health){};</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classCastle.html#a3ca471519ef12f22c3b71ad6f1b6b820">   62</a></span>             <a class="code hl_function" href="classCastle.html#a3ca471519ef12f22c3b71ad6f1b6b820">Castle</a>(<span class="keyword">const</span> <a class="code hl_class" href="classCastle.html">Castle</a>&amp; _castle) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classCastle.html#a93e68b72a473771f2087ead1677d399d">   67</a></span>        <a class="code hl_function" href="classCastle.html#a93e68b72a473771f2087ead1677d399d">~Castle</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classCastle.html#aa173aef64456b1599f59cfff7b2a4a31">   73</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="classCastle.html#aa173aef64456b1599f59cfff7b2a4a31">getCurStrength</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> curStrength;}</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classCastle.html#a2e4c371c470f8aeabc8197e616c97f5e">   79</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classCastle.html#a2e4c371c470f8aeabc8197e616c97f5e">setCurStrength</a>(<span class="keywordtype">size_t</span> str){curStrength = str;}</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classCastle.html#a11bdf97c5219868178dcd1053f4b4dd5">   84</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="classCastle.html#a11bdf97c5219868178dcd1053f4b4dd5">getMaxStrength</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> maxStrength;}</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classCastle.html#a1602d516e455f8be18d835a8228462bf">   90</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classCastle.html#a1602d516e455f8be18d835a8228462bf">setMaxStrength</a>(<span class="keywordtype">size_t</span> str){maxStrength = str;}</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classCastle.html#aa476d8d350e06e92e643a4565766face">   95</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="classCastle.html#aa476d8d350e06e92e643a4565766face">getGold</a>()<span class="keyword"> const</span>{ <span class="keywordflow">return</span> gold; };</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classCastle.html#a09d9ab1df5a1779ada4ae343b48d3527">  101</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classCastle.html#a09d9ab1df5a1779ada4ae343b48d3527">setGold</a>(<span class="keywordtype">size_t</span> gl){gold = gl;}</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classCastle.html#a540fdf3b84611c5f442311cab0d12016">fillUp</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp; gl);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classCastle.html#a1dbed5516e164c0b85ca6606658f6055">improve</a>(<span class="keyword">const</span> <a class="code hl_class" href="classGame.html">Game</a>&amp; gm) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classCastle.html#a793862c77dd542c7c2519975ef0bdb91">writeOfMoney</a>(<span class="keywordtype">size_t</span> gl);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classCastle.html#a41469c06731eb3b3df7fa40278d60846">damage</a>(<span class="keywordtype">size_t</span> gold, <span class="keywordtype">size_t</span> health);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    };</div>
+</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="foldopen" id="foldopen00130" data-start="{" data-end="};">
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classTower.html">  130</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classTower.html">Tower</a> : <span class="keyword">public</span> <a class="code hl_class" href="classConstruction.html">Construction</a> {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="keyword">friend</span> <a class="code hl_class" href="classGame.html">Game</a>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        std::map&lt;std::string, int&gt; characteristics;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="classTower.html#a9af5e5f097ef6d9729cec93a6cc61046">  139</a></span>        <a class="code hl_function" href="classTower.html#a9af5e5f097ef6d9729cec93a6cc61046">Tower</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="classTower.html#a9f56edf3ee9ca3fec60d7948e66a2da9">  145</a></span>        <a class="code hl_function" href="classTower.html#a9f56edf3ee9ca3fec60d7948e66a2da9">Tower</a>(<span class="keyword">const</span> <a class="code hl_class" href="classTower.html">Tower</a>&amp; other) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="classTower.html#a3292f0efcd4928302685adfe4955ba69">  150</a></span>        <a class="code hl_function" href="classTower.html#a3292f0efcd4928302685adfe4955ba69">~Tower</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="classTower.html#a1440cf10b52170688f13e70125ecf654">  155</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classTower.html#a1440cf10b52170688f13e70125ecf654">hit</a>(<a class="code hl_class" href="classLandscape.html">Landscape</a> &amp;) = 0;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="classTower.html#a45c4c2ab7641dc7a0b66f36c629046e4">  163</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classTower.html#a45c4c2ab7641dc7a0b66f36c629046e4">setChar</a>(<span class="keyword">const</span> std::string&amp; str, <span class="keywordtype">int</span> val){ characteristics[str] = val;}</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="classTower.html#acf509427505a36c122e9116093358c12">  169</a></span>        <span class="keywordtype">int</span> <a class="code hl_function" href="classTower.html#acf509427505a36c122e9116093358c12">getChar</a>(<span class="keyword">const</span> std::string&amp; str){ <span class="keywordflow">return</span> characteristics[str];}</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    };</div>
+</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="foldopen" id="foldopen00172" data-start="{" data-end="};">
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="classMagicTower.html">  172</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classMagicTower.html">MagicTower</a> : <span class="keyword">public</span> <a class="code hl_class" href="classTower.html">Tower</a> {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <a class="code hl_class" href="classMagicTower.html">MagicTower</a>(<span class="keyword">const</span> <a class="code hl_class" href="classGame.html">Game</a>&amp; gm, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; type);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classMagicTower.html#afdda365b18b89942a91234d0157f7ce7">improve</a>(<span class="keyword">const</span> <a class="code hl_class" href="classGame.html">Game</a>&amp; gm) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classMagicTower.html#ae8e4e5cb41bd97f3e7cf917a8d135ec1">hit</a>(<a class="code hl_class" href="classLandscape.html">Landscape</a>&amp; land) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    };</div>
+</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="foldopen" id="foldopen00195" data-start="{" data-end="};">
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="classSimpleTower.html">  195</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classSimpleTower.html">SimpleTower</a> : <span class="keyword">public</span> <a class="code hl_class" href="classTower.html">Tower</a> {</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            <a class="code hl_class" href="classSimpleTower.html">SimpleTower</a>(<span class="keyword">const</span> <a class="code hl_class" href="classGame.html">Game</a>&amp;);</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            <span class="keywordtype">bool</span> <a class="code hl_function" href="classSimpleTower.html#ac911cd012b21c949f1e902448c242e28">improve</a>(<span class="keyword">const</span> <a class="code hl_class" href="classGame.html">Game</a>&amp; gm) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classSimpleTower.html#a75cbfa4067382d04a775bb53a156f423">hit</a>(<a class="code hl_class" href="classLandscape.html">Landscape</a>&amp; land) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    };</div>
+</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    </div>
+<div class="foldopen" id="foldopen00217" data-start="{" data-end="};">
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="classMagicTrap.html">  217</a></span>     <span class="keyword">class </span><a class="code hl_class" href="classMagicTrap.html">MagicTrap</a> : <span class="keyword">public</span> <a class="code hl_class" href="classTower.html">Tower</a> {</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>       <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            <a class="code hl_class" href="classMagicTrap.html">MagicTrap</a>(<span class="keyword">const</span> <a class="code hl_class" href="classGame.html">Game</a>&amp; gm, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; type);</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>            <span class="keywordtype">bool</span> <a class="code hl_function" href="classMagicTrap.html#a68645a320b6da8478cbf1c8084133ea6">improve</a>(<span class="keyword">const</span> <a class="code hl_class" href="classGame.html">Game</a>&amp; gm) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classMagicTrap.html#aaa24099448ea4f9c82ccde02230f7025">hit</a>(<a class="code hl_class" href="classLandscape.html">Landscape</a>&amp; land) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>     };</div>
+</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="foldopen" id="foldopen00240" data-start="{" data-end="};">
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno"><a class="line" href="classLair.html">  240</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classLair.html">Lair</a> : <span class="keyword">public</span> <a class="code hl_class" href="classConstruction.html">Construction</a> {</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        std::queue&lt;Enemy*&gt; enemys;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        <span class="keywordtype">size_t</span> timeBtwWaves = 0;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        <span class="keywordtype">size_t</span> cnt = 1;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="classLair.html#a489383e6293a9aaba8accd12a7d2b2c6">  250</a></span>        <a class="code hl_function" href="classLair.html#a489383e6293a9aaba8accd12a7d2b2c6">Lair</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="classLair.html#a1b968d2b138f64c3e15aead576eb0480">  256</a></span>        <a class="code hl_function" href="classLair.html#a1b968d2b138f64c3e15aead576eb0480">Lair</a>(<span class="keywordtype">size_t</span> tm): timeBtwWaves(tm){};</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="classLair.html#aaaa79ac82aca9e7e54796d7938daf553">  262</a></span>        <a class="code hl_function" href="classLair.html#aaaa79ac82aca9e7e54796d7938daf553">Lair</a>(<span class="keyword">const</span> <a class="code hl_class" href="classLair.html">Lair</a> &amp;other) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno"><a class="line" href="classLair.html#a4cd56a536968944045c485984288459c">  267</a></span>        <a class="code hl_function" href="classLair.html#a4cd56a536968944045c485984288459c">~Lair</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="classLair.html#a200ee60d292dcf27aca205be12f2cbfe">  274</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="classLair.html#a200ee60d292dcf27aca205be12f2cbfe">getTime</a>()<span class="keyword"> const</span>{<span class="keywordflow">return</span> timeBtwWaves;}</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno"><a class="line" href="classLair.html#aff280e882d3134a149bdcc965859aa23">  280</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classLair.html#aff280e882d3134a149bdcc965859aa23">setTime</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> &amp; tm){ timeBtwWaves = tm;}</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="classLair.html#a089befdc0acbebe2277aa7d789cf6953">  285</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classLair.html#a089befdc0acbebe2277aa7d789cf6953">setCnt</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> &amp; cn){ cnt = cn;}</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="classLair.html#a9b56150c44b0eabfc4fe9b355607b8ea">  291</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classLair.html#a9b56150c44b0eabfc4fe9b355607b8ea">empty</a>()<span class="keyword"> const</span>{ <span class="keywordflow">return</span> enemys.empty();}</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classLair.html#a2313222a10d5204b1dc3e3423324642f">improve</a>(<span class="keyword">const</span> <a class="code hl_class" href="classGame.html">Game</a>&amp; gm) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classLair.html#a423807e359b4f8a1ea920655209c3bcf">releaseEnemy</a>(<a class="code hl_class" href="classLandscape.html">Landscape</a>&amp; land);</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classLair.html#a576cd1cba352d38359c6d73fd6a0e676">releaseEnemy_t</a>(<span class="keyword">const</span> <a class="code hl_class" href="classGame.html">Game</a>&amp; gm);</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classLair.html#a1be0dc2e4e578edea7612ee3cd384202">pushEnemy</a>(<a class="code hl_class" href="classEnemy.html">Enemy</a>* enm);</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    };</div>
+</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="preprocessor">#endif </span><span class="comment">//OOP_LAB3_CONSTRUCTION_H</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
+<div class="ttc" id="aclassCastle_html"><div class="ttname"><a href="classCastle.html">Castle</a></div><div class="ttdef"><b>Definition</b> Construction.h:37</div></div>
+<div class="ttc" id="aclassCastle_html_a09d9ab1df5a1779ada4ae343b48d3527"><div class="ttname"><a href="classCastle.html#a09d9ab1df5a1779ada4ae343b48d3527">Castle::setGold</a></div><div class="ttdeci">void setGold(size_t gl)</div><div class="ttdoc">Сеттер денег Устанавливает текущее количество денег</div><div class="ttdef"><b>Definition</b> Construction.h:101</div></div>
+<div class="ttc" id="aclassCastle_html_a11bdf97c5219868178dcd1053f4b4dd5"><div class="ttname"><a href="classCastle.html#a11bdf97c5219868178dcd1053f4b4dd5">Castle::getMaxStrength</a></div><div class="ttdeci">size_t getMaxStrength() const</div><div class="ttdoc">Геттер максимального здоровья</div><div class="ttdef"><b>Definition</b> Construction.h:84</div></div>
+<div class="ttc" id="aclassCastle_html_a1602d516e455f8be18d835a8228462bf"><div class="ttname"><a href="classCastle.html#a1602d516e455f8be18d835a8228462bf">Castle::setMaxStrength</a></div><div class="ttdeci">void setMaxStrength(size_t str)</div><div class="ttdoc">Сеттер максимального здоровья Устанавливает значение максимального здоровья</div><div class="ttdef"><b>Definition</b> Construction.h:90</div></div>
+<div class="ttc" id="aclassCastle_html_a1dbed5516e164c0b85ca6606658f6055"><div class="ttname"><a href="classCastle.html#a1dbed5516e164c0b85ca6606658f6055">Castle::improve</a></div><div class="ttdeci">bool improve(const Game &amp;gm) override</div><div class="ttdoc">Улучшение замка Обновляет характеристики замка в соответствии с конфигурационными файлами</div><div class="ttdef"><b>Definition</b> Construction.cpp:250</div></div>
+<div class="ttc" id="aclassCastle_html_a2e4c371c470f8aeabc8197e616c97f5e"><div class="ttname"><a href="classCastle.html#a2e4c371c470f8aeabc8197e616c97f5e">Castle::setCurStrength</a></div><div class="ttdeci">void setCurStrength(size_t str)</div><div class="ttdoc">Сеттер текущего здоровья Устанавливает значение текущего здоровья</div><div class="ttdef"><b>Definition</b> Construction.h:79</div></div>
+<div class="ttc" id="aclassCastle_html_a3ca471519ef12f22c3b71ad6f1b6b820"><div class="ttname"><a href="classCastle.html#a3ca471519ef12f22c3b71ad6f1b6b820">Castle::Castle</a></div><div class="ttdeci">Castle(const Castle &amp;_castle)=default</div><div class="ttdoc">Конструктор копирования. Создает новый объект, копируя значения из другого объекта того же типа.</div></div>
+<div class="ttc" id="aclassCastle_html_a41469c06731eb3b3df7fa40278d60846"><div class="ttname"><a href="classCastle.html#a41469c06731eb3b3df7fa40278d60846">Castle::damage</a></div><div class="ttdeci">void damage(size_t gold, size_t health)</div><div class="ttdoc">Наненсение урона замку уменьшает здоровье и количество золота замка</div><div class="ttdef"><b>Definition</b> Construction.cpp:277</div></div>
+<div class="ttc" id="aclassCastle_html_a540fdf3b84611c5f442311cab0d12016"><div class="ttname"><a href="classCastle.html#a540fdf3b84611c5f442311cab0d12016">Castle::fillUp</a></div><div class="ttdeci">void fillUp(const size_t &amp;gl)</div><div class="ttdoc">Пополнение денег замка Увеличивает количество денег</div><div class="ttdef"><b>Definition</b> Construction.cpp:273</div></div>
+<div class="ttc" id="aclassCastle_html_a5d9e51e72035353d871e61cb1a4edcd3"><div class="ttname"><a href="classCastle.html#a5d9e51e72035353d871e61cb1a4edcd3">Castle::Castle</a></div><div class="ttdeci">Castle(const std::string &amp;_name, const int _gold, const size_t _health)</div><div class="ttdoc">Конструктор Инициализирует объект заданными значениями</div><div class="ttdef"><b>Definition</b> Construction.h:56</div></div>
+<div class="ttc" id="aclassCastle_html_a793862c77dd542c7c2519975ef0bdb91"><div class="ttname"><a href="classCastle.html#a793862c77dd542c7c2519975ef0bdb91">Castle::writeOfMoney</a></div><div class="ttdeci">bool writeOfMoney(size_t gl)</div><div class="ttdoc">Списание денег с замка Уменьшает количество денег</div><div class="ttdef"><b>Definition</b> Construction.cpp:266</div></div>
+<div class="ttc" id="aclassCastle_html_a93e68b72a473771f2087ead1677d399d"><div class="ttname"><a href="classCastle.html#a93e68b72a473771f2087ead1677d399d">Castle::~Castle</a></div><div class="ttdeci">~Castle()=default</div><div class="ttdoc">Деструктор Уничтожает объект</div></div>
+<div class="ttc" id="aclassCastle_html_aa173aef64456b1599f59cfff7b2a4a31"><div class="ttname"><a href="classCastle.html#aa173aef64456b1599f59cfff7b2a4a31">Castle::getCurStrength</a></div><div class="ttdeci">size_t getCurStrength() const</div><div class="ttdoc">Геттер текущего здоровья</div><div class="ttdef"><b>Definition</b> Construction.h:73</div></div>
+<div class="ttc" id="aclassCastle_html_aa476d8d350e06e92e643a4565766face"><div class="ttname"><a href="classCastle.html#aa476d8d350e06e92e643a4565766face">Castle::getGold</a></div><div class="ttdeci">size_t getGold() const</div><div class="ttdoc">Геттер денег</div><div class="ttdef"><b>Definition</b> Construction.h:95</div></div>
+<div class="ttc" id="aclassCastle_html_ab5a57307b5e4c8ecb6f8f0524684e6d6"><div class="ttname"><a href="classCastle.html#ab5a57307b5e4c8ecb6f8f0524684e6d6">Castle::Castle</a></div><div class="ttdeci">Castle()</div><div class="ttdoc">Конструктор по умолчанию Инициализирует объект с нулевым значением</div><div class="ttdef"><b>Definition</b> Construction.h:48</div></div>
+<div class="ttc" id="aclassConstruction_html"><div class="ttname"><a href="classConstruction.html">Construction</a></div><div class="ttdef"><b>Definition</b> Construction.h:16</div></div>
+<div class="ttc" id="aclassConstruction_html_a0dc9043acb73342166d8562d892b7f97"><div class="ttname"><a href="classConstruction.html#a0dc9043acb73342166d8562d892b7f97">Construction::setLevel</a></div><div class="ttdeci">void setLevel(const size_t &amp;lvl)</div><div class="ttdoc">Сеттер уровня Устанавливает уровень конструкции</div><div class="ttdef"><b>Definition</b> Construction.h:30</div></div>
+<div class="ttc" id="aclassConstruction_html_acd52d413e9077b7ed4f2097401565e3e"><div class="ttname"><a href="classConstruction.html#acd52d413e9077b7ed4f2097401565e3e">Construction::improve</a></div><div class="ttdeci">virtual bool improve(const Game &amp;)=0</div><div class="ttdoc">Виртуальная функция улучшенния конструкции</div></div>
+<div class="ttc" id="aclassConstruction_html_af82f77e72211da9b22866ac7897cb457"><div class="ttname"><a href="classConstruction.html#af82f77e72211da9b22866ac7897cb457">Construction::getLevel</a></div><div class="ttdeci">size_t getLevel()</div><div class="ttdoc">Геттер уровня</div><div class="ttdef"><b>Definition</b> Construction.h:24</div></div>
+<div class="ttc" id="aclassEnemy_html"><div class="ttname"><a href="classEnemy.html">Enemy</a></div><div class="ttdef"><b>Definition</b> Enemy.h:17</div></div>
+<div class="ttc" id="aclassGame_html"><div class="ttname"><a href="classGame.html">Game</a></div><div class="ttdef"><b>Definition</b> Game.h:14</div></div>
+<div class="ttc" id="aclassLair_html"><div class="ttname"><a href="classLair.html">Lair</a></div><div class="ttdef"><b>Definition</b> Construction.h:240</div></div>
+<div class="ttc" id="aclassLair_html_a089befdc0acbebe2277aa7d789cf6953"><div class="ttname"><a href="classLair.html#a089befdc0acbebe2277aa7d789cf6953">Lair::setCnt</a></div><div class="ttdeci">void setCnt(const size_t &amp;cn)</div><div class="ttdoc">Сеттер количества врагов в одной волне</div><div class="ttdef"><b>Definition</b> Construction.h:285</div></div>
+<div class="ttc" id="aclassLair_html_a1b968d2b138f64c3e15aead576eb0480"><div class="ttname"><a href="classLair.html#a1b968d2b138f64c3e15aead576eb0480">Lair::Lair</a></div><div class="ttdeci">Lair(size_t tm)</div><div class="ttdoc">Конструктор Создает новый объект</div><div class="ttdef"><b>Definition</b> Construction.h:256</div></div>
+<div class="ttc" id="aclassLair_html_a1be0dc2e4e578edea7612ee3cd384202"><div class="ttname"><a href="classLair.html#a1be0dc2e4e578edea7612ee3cd384202">Lair::pushEnemy</a></div><div class="ttdeci">void pushEnemy(Enemy *enm)</div><div class="ttdoc">Пополнение очереди врагов Увеличивает очередь врагов заданным указателем</div><div class="ttdef"><b>Definition</b> Construction.cpp:229</div></div>
+<div class="ttc" id="aclassLair_html_a200ee60d292dcf27aca205be12f2cbfe"><div class="ttname"><a href="classLair.html#a200ee60d292dcf27aca205be12f2cbfe">Lair::getTime</a></div><div class="ttdeci">size_t getTime() const</div><div class="ttdoc">Геттер времени</div><div class="ttdef"><b>Definition</b> Construction.h:274</div></div>
+<div class="ttc" id="aclassLair_html_a2313222a10d5204b1dc3e3423324642f"><div class="ttname"><a href="classLair.html#a2313222a10d5204b1dc3e3423324642f">Lair::improve</a></div><div class="ttdeci">bool improve(const Game &amp;gm) override</div><div class="ttdoc">Улчушение логова Обновляет логово в соответствии с конфигурационными файлами</div><div class="ttdef"><b>Definition</b> Construction.cpp:233</div></div>
+<div class="ttc" id="aclassLair_html_a423807e359b4f8a1ea920655209c3bcf"><div class="ttname"><a href="classLair.html#a423807e359b4f8a1ea920655209c3bcf">Lair::releaseEnemy</a></div><div class="ttdeci">bool releaseEnemy(Landscape &amp;land)</div><div class="ttdoc">Выпуск врагов из логова</div><div class="ttdef"><b>Definition</b> Construction.cpp:203</div></div>
+<div class="ttc" id="aclassLair_html_a489383e6293a9aaba8accd12a7d2b2c6"><div class="ttname"><a href="classLair.html#a489383e6293a9aaba8accd12a7d2b2c6">Lair::Lair</a></div><div class="ttdeci">Lair()=default</div><div class="ttdoc">Конструктор по умолчанию Инициализирует объект нулевым значением</div></div>
+<div class="ttc" id="aclassLair_html_a4cd56a536968944045c485984288459c"><div class="ttname"><a href="classLair.html#a4cd56a536968944045c485984288459c">Lair::~Lair</a></div><div class="ttdeci">~Lair()=default</div><div class="ttdoc">Деструктор Уничтожает объект</div></div>
+<div class="ttc" id="aclassLair_html_a576cd1cba352d38359c6d73fd6a0e676"><div class="ttname"><a href="classLair.html#a576cd1cba352d38359c6d73fd6a0e676">Lair::releaseEnemy_t</a></div><div class="ttdeci">bool releaseEnemy_t(const Game &amp;gm)</div><div class="ttdoc">Выпуск врагов из логова в соответствии с временем.</div><div class="ttdef"><b>Definition</b> Construction.cpp:219</div></div>
+<div class="ttc" id="aclassLair_html_a9b56150c44b0eabfc4fe9b355607b8ea"><div class="ttname"><a href="classLair.html#a9b56150c44b0eabfc4fe9b355607b8ea">Lair::empty</a></div><div class="ttdeci">bool empty() const</div><div class="ttdoc">Проверка логова Проверяет, пустое ли логово</div><div class="ttdef"><b>Definition</b> Construction.h:291</div></div>
+<div class="ttc" id="aclassLair_html_aaaa79ac82aca9e7e54796d7938daf553"><div class="ttname"><a href="classLair.html#aaaa79ac82aca9e7e54796d7938daf553">Lair::Lair</a></div><div class="ttdeci">Lair(const Lair &amp;other)=default</div><div class="ttdoc">Конструктор копирования. Создает новый объект, копируя значения из другого объекта того же типа.</div></div>
+<div class="ttc" id="aclassLair_html_aff280e882d3134a149bdcc965859aa23"><div class="ttname"><a href="classLair.html#aff280e882d3134a149bdcc965859aa23">Lair::setTime</a></div><div class="ttdeci">void setTime(const size_t &amp;tm)</div><div class="ttdoc">Сеттер времени Устанавливает время между волнами врагов</div><div class="ttdef"><b>Definition</b> Construction.h:280</div></div>
+<div class="ttc" id="aclassLandscape_html"><div class="ttname"><a href="classLandscape.html">Landscape</a></div><div class="ttdef"><b>Definition</b> Landscape.h:18</div></div>
+<div class="ttc" id="aclassMagicTower_html"><div class="ttname"><a href="classMagicTower.html">MagicTower</a></div><div class="ttdef"><b>Definition</b> Construction.h:172</div></div>
+<div class="ttc" id="aclassMagicTower_html_ae8e4e5cb41bd97f3e7cf917a8d135ec1"><div class="ttname"><a href="classMagicTower.html#ae8e4e5cb41bd97f3e7cf917a8d135ec1">MagicTower::hit</a></div><div class="ttdeci">void hit(Landscape &amp;land) override</div><div class="ttdoc">Удар башни Бьёт ближайшего к башне врага</div><div class="ttdef"><b>Definition</b> Construction.cpp:8</div></div>
+<div class="ttc" id="aclassMagicTower_html_afdda365b18b89942a91234d0157f7ce7"><div class="ttname"><a href="classMagicTower.html#afdda365b18b89942a91234d0157f7ce7">MagicTower::improve</a></div><div class="ttdeci">bool improve(const Game &amp;gm) override</div><div class="ttdoc">Улучшение башни Обновляет таблицу характеристик</div><div class="ttdef"><b>Definition</b> Construction.cpp:153</div></div>
+<div class="ttc" id="aclassMagicTrap_html"><div class="ttname"><a href="classMagicTrap.html">MagicTrap</a></div><div class="ttdef"><b>Definition</b> Construction.h:217</div></div>
+<div class="ttc" id="aclassMagicTrap_html_a68645a320b6da8478cbf1c8084133ea6"><div class="ttname"><a href="classMagicTrap.html#a68645a320b6da8478cbf1c8084133ea6">MagicTrap::improve</a></div><div class="ttdeci">bool improve(const Game &amp;gm) override</div><div class="ttdoc">Улучшение башни Обновляет таблицу характеристик</div><div class="ttdef"><b>Definition</b> Construction.cpp:185</div></div>
+<div class="ttc" id="aclassMagicTrap_html_aaa24099448ea4f9c82ccde02230f7025"><div class="ttname"><a href="classMagicTrap.html#aaa24099448ea4f9c82ccde02230f7025">MagicTrap::hit</a></div><div class="ttdeci">void hit(Landscape &amp;land) override</div><div class="ttdoc">Удар башни Бьёт всех в радиусе поражения</div><div class="ttdef"><b>Definition</b> Construction.cpp:92</div></div>
+<div class="ttc" id="aclassSimpleTower_html"><div class="ttname"><a href="classSimpleTower.html">SimpleTower</a></div><div class="ttdef"><b>Definition</b> Construction.h:195</div></div>
+<div class="ttc" id="aclassSimpleTower_html_a75cbfa4067382d04a775bb53a156f423"><div class="ttname"><a href="classSimpleTower.html#a75cbfa4067382d04a775bb53a156f423">SimpleTower::hit</a></div><div class="ttdeci">void hit(Landscape &amp;land) override</div><div class="ttdoc">Удар башни Бьёт ближайшего к башне врага</div><div class="ttdef"><b>Definition</b> Construction.cpp:53</div></div>
+<div class="ttc" id="aclassSimpleTower_html_ac911cd012b21c949f1e902448c242e28"><div class="ttname"><a href="classSimpleTower.html#ac911cd012b21c949f1e902448c242e28">SimpleTower::improve</a></div><div class="ttdeci">bool improve(const Game &amp;gm) override</div><div class="ttdoc">Улучшение башни Обновляет таблицу характеристик</div><div class="ttdef"><b>Definition</b> Construction.cpp:121</div></div>
+<div class="ttc" id="aclassTower_html"><div class="ttname"><a href="classTower.html">Tower</a></div><div class="ttdef"><b>Definition</b> Construction.h:130</div></div>
+<div class="ttc" id="aclassTower_html_a1440cf10b52170688f13e70125ecf654"><div class="ttname"><a href="classTower.html#a1440cf10b52170688f13e70125ecf654">Tower::hit</a></div><div class="ttdeci">virtual void hit(Landscape &amp;)=0</div><div class="ttdoc">Виртуальная функция выстрела башни</div></div>
+<div class="ttc" id="aclassTower_html_a3292f0efcd4928302685adfe4955ba69"><div class="ttname"><a href="classTower.html#a3292f0efcd4928302685adfe4955ba69">Tower::~Tower</a></div><div class="ttdeci">~Tower()=default</div><div class="ttdoc">Деструктор. уничтожает объект</div></div>
+<div class="ttc" id="aclassTower_html_a45c4c2ab7641dc7a0b66f36c629046e4"><div class="ttname"><a href="classTower.html#a45c4c2ab7641dc7a0b66f36c629046e4">Tower::setChar</a></div><div class="ttdeci">void setChar(const std::string &amp;str, int val)</div><div class="ttdoc">Сеттер характеристик Вставляет заданную характеристику в таблицу</div><div class="ttdef"><b>Definition</b> Construction.h:163</div></div>
+<div class="ttc" id="aclassTower_html_a9af5e5f097ef6d9729cec93a6cc61046"><div class="ttname"><a href="classTower.html#a9af5e5f097ef6d9729cec93a6cc61046">Tower::Tower</a></div><div class="ttdeci">Tower()=default</div><div class="ttdoc">Конструктор по умолчанию. Инициализирует объект с нулевым значением данных.</div></div>
+<div class="ttc" id="aclassTower_html_a9f56edf3ee9ca3fec60d7948e66a2da9"><div class="ttname"><a href="classTower.html#a9f56edf3ee9ca3fec60d7948e66a2da9">Tower::Tower</a></div><div class="ttdeci">Tower(const Tower &amp;other)=default</div><div class="ttdoc">Конструктор копирования. Создает новый объект, копируя значения из другого объекта того же типа.</div></div>
+<div class="ttc" id="aclassTower_html_acf509427505a36c122e9116093358c12"><div class="ttname"><a href="classTower.html#acf509427505a36c122e9116093358c12">Tower::getChar</a></div><div class="ttdeci">int getChar(const std::string &amp;str)</div><div class="ttdoc">Геттер характеристик Возвращает значение по ключу</div><div class="ttdef"><b>Definition</b> Construction.h:169</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

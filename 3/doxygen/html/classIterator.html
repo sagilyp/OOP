@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TOWER DEFENCE: Шаблон класса Iterator&lt; T, is_const &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TOWER DEFENCE<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">towers and enemys</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classIterator-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Шаблон класса Iterator&lt; T, is_const &gt;</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:afdae8bc2805e8f126948ea09d42f9466" id="r_afdae8bc2805e8f126948ea09d42f9466"><td class="memItemLeft" align="right" valign="top"><a id="afdae8bc2805e8f126948ea09d42f9466" name="afdae8bc2805e8f126948ea09d42f9466"></a>
+typedef ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><b>difference_type</b></td></tr>
+<tr class="separator:afdae8bc2805e8f126948ea09d42f9466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24f0b02724e810873d0934751ed05c9e" id="r_a24f0b02724e810873d0934751ed05c9e"><td class="memItemLeft" align="right" valign="top"><a id="a24f0b02724e810873d0934751ed05c9e" name="a24f0b02724e810873d0934751ed05c9e"></a>
+typedef T&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b></td></tr>
+<tr class="separator:a24f0b02724e810873d0934751ed05c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe055a0219a8935fd46586995615e70" id="r_a9fe055a0219a8935fd46586995615e70"><td class="memItemLeft" align="right" valign="top"><a id="a9fe055a0219a8935fd46586995615e70" name="a9fe055a0219a8935fd46586995615e70"></a>
+typedef std::conditional_t&lt; is_const, const T, T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b></td></tr>
+<tr class="separator:a9fe055a0219a8935fd46586995615e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda5f1f466a85075fa76eec73c10d08e" id="r_afda5f1f466a85075fa76eec73c10d08e"><td class="memItemLeft" align="right" valign="top"><a id="afda5f1f466a85075fa76eec73c10d08e" name="afda5f1f466a85075fa76eec73c10d08e"></a>
+typedef std::conditional_t&lt; is_const, const T, T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b></td></tr>
+<tr class="separator:afda5f1f466a85075fa76eec73c10d08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa3d502085f53492adcc96b9153c38f" id="r_afaa3d502085f53492adcc96b9153c38f"><td class="memItemLeft" align="right" valign="top"><a id="afaa3d502085f53492adcc96b9153c38f" name="afaa3d502085f53492adcc96b9153c38f"></a>
+typedef std::bidirectional_iterator_tag&#160;</td><td class="memItemRight" valign="bottom"><b>iterator_category</b></td></tr>
+<tr class="separator:afaa3d502085f53492adcc96b9153c38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ad22d4993bb439644c69c6c96d7d5888b" id="r_ad22d4993bb439644c69c6c96d7d5888b"><td class="memItemLeft" align="right" valign="top"><a id="ad22d4993bb439644c69c6c96d7d5888b" name="ad22d4993bb439644c69c6c96d7d5888b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Iterator</b> (ptr_t ptr) noexcept</td></tr>
+<tr class="separator:ad22d4993bb439644c69c6c96d7d5888b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8912322b8adc2411ee689c16792025b2" id="r_a8912322b8adc2411ee689c16792025b2"><td class="memItemLeft" align="right" valign="top"><a id="a8912322b8adc2411ee689c16792025b2" name="a8912322b8adc2411ee689c16792025b2"></a>
+<a class="el" href="classIterator.html">Iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> () noexcept</td></tr>
+<tr class="separator:a8912322b8adc2411ee689c16792025b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d73538367cfd81f63f1773d4084bf4e" id="r_a9d73538367cfd81f63f1773d4084bf4e"><td class="memItemLeft" align="right" valign="top"><a id="a9d73538367cfd81f63f1773d4084bf4e" name="a9d73538367cfd81f63f1773d4084bf4e"></a>
+<a class="el" href="classIterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> (int) noexcept</td></tr>
+<tr class="separator:a9d73538367cfd81f63f1773d4084bf4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56b9152ad674ea153a8161f340e3791" id="r_ae56b9152ad674ea153a8161f340e3791"><td class="memItemLeft" align="right" valign="top"><a id="ae56b9152ad674ea153a8161f340e3791" name="ae56b9152ad674ea153a8161f340e3791"></a>
+<a class="el" href="classIterator.html">Iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator--</b> () noexcept</td></tr>
+<tr class="separator:ae56b9152ad674ea153a8161f340e3791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49062a36d8aba43b494394f96e47b15b" id="r_a49062a36d8aba43b494394f96e47b15b"><td class="memItemLeft" align="right" valign="top"><a id="a49062a36d8aba43b494394f96e47b15b" name="a49062a36d8aba43b494394f96e47b15b"></a>
+<a class="el" href="classIterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator--</b> (int) noexcept</td></tr>
+<tr class="separator:a49062a36d8aba43b494394f96e47b15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ddaea99d708c6159b23ef8f693471a4" id="r_a9ddaea99d708c6159b23ef8f693471a4"><td class="memItemLeft" align="right" valign="top"><a id="a9ddaea99d708c6159b23ef8f693471a4" name="a9ddaea99d708c6159b23ef8f693471a4"></a>
+<a class="el" href="classIterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (size_t n) noexcept</td></tr>
+<tr class="separator:a9ddaea99d708c6159b23ef8f693471a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae72f421bc154116b6af959749c339fe2" id="r_ae72f421bc154116b6af959749c339fe2"><td class="memItemLeft" align="right" valign="top"><a id="ae72f421bc154116b6af959749c339fe2" name="ae72f421bc154116b6af959749c339fe2"></a>
+<a class="el" href="classIterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (size_t n) noexcept</td></tr>
+<tr class="separator:ae72f421bc154116b6af959749c339fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a714ab96f15656b47ce9bcde1abf78cf1" id="r_a714ab96f15656b47ce9bcde1abf78cf1"><td class="memItemLeft" align="right" valign="top"><a id="a714ab96f15656b47ce9bcde1abf78cf1" name="a714ab96f15656b47ce9bcde1abf78cf1"></a>
+reference&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> () noexcept</td></tr>
+<tr class="separator:a714ab96f15656b47ce9bcde1abf78cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a541d89cddb5c2b30af7683c45c777623" id="r_a541d89cddb5c2b30af7683c45c777623"><td class="memItemLeft" align="right" valign="top"><a id="a541d89cddb5c2b30af7683c45c777623" name="a541d89cddb5c2b30af7683c45c777623"></a>
+std::add_const_t&lt; reference &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> () const noexcept</td></tr>
+<tr class="separator:a541d89cddb5c2b30af7683c45c777623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24211c3224fc5594829fcf54da1cb053" id="r_a24211c3224fc5594829fcf54da1cb053"><td class="memItemLeft" align="right" valign="top"><a id="a24211c3224fc5594829fcf54da1cb053" name="a24211c3224fc5594829fcf54da1cb053"></a>
+pointer&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> () const noexcept</td></tr>
+<tr class="separator:a24211c3224fc5594829fcf54da1cb053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c254a67478690657a4bdb49791d963" id="r_ae0c254a67478690657a4bdb49791d963"><td class="memTemplParams" colspan="2"><a id="ae0c254a67478690657a4bdb49791d963" name="ae0c254a67478690657a4bdb49791d963"></a>
+template&lt;bool other_const&gt; </td></tr>
+<tr class="memitem:ae0c254a67478690657a4bdb49791d963"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&lt;=&gt;</b> (const <a class="el" href="classIterator.html">Iterator</a>&lt; T, other_const &gt; &amp;o)</td></tr>
+<tr class="separator:ae0c254a67478690657a4bdb49791d963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6355124627a8d9331371b62ee57447b1" id="r_a6355124627a8d9331371b62ee57447b1"><td class="memTemplParams" colspan="2"><a id="a6355124627a8d9331371b62ee57447b1" name="a6355124627a8d9331371b62ee57447b1"></a>
+template&lt;bool other_const&gt; </td></tr>
+<tr class="memitem:a6355124627a8d9331371b62ee57447b1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classIterator.html">Iterator</a>&lt; T, other_const &gt; &amp;o) const noexcept</td></tr>
+<tr class="separator:a6355124627a8d9331371b62ee57447b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acffac0dd3523427e7f7719eff0f51bd4" id="r_acffac0dd3523427e7f7719eff0f51bd4"><td class="memTemplParams" colspan="2"><a id="acffac0dd3523427e7f7719eff0f51bd4" name="acffac0dd3523427e7f7719eff0f51bd4"></a>
+template&lt;bool other_const&gt; <br />
+requires (other_const &lt;= is_const)</td></tr>
+<tr class="memitem:acffac0dd3523427e7f7719eff0f51bd4"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Iterator</b> (const <a class="el" href="classIterator.html">Iterator</a>&lt; T, other_const &gt; &amp;o) noexcept</td></tr>
+<tr class="separator:acffac0dd3523427e7f7719eff0f51bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c1c0267a63506ea1a656c876dc558ac" id="r_a0c1c0267a63506ea1a656c876dc558ac"><td class="memTemplParams" colspan="2"><a id="a0c1c0267a63506ea1a656c876dc558ac" name="a0c1c0267a63506ea1a656c876dc558ac"></a>
+template&lt;bool other_const&gt; <br />
+requires (other_const &lt;= is_const)</td></tr>
+<tr class="memitem:a0c1c0267a63506ea1a656c876dc558ac"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classIterator.html">Iterator</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classIterator.html">Iterator</a>&lt; T, other_const &gt; &amp;o) noexcept</td></tr>
+<tr class="separator:a0c1c0267a63506ea1a656c876dc558ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Entity/<a class="el" href="Matrix_8h_source.html">Matrix.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

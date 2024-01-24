@@ -1,0 +1,29 @@
+{
+    "1": {
+        "gold": 50,
+        "health": 50,
+        "quantity": 21,
+        "tbw": 7,
+        "type": 0,
+        "velocity": 9,
+        "wave": 3
+    },
+    "2": {
+        "gold": 75,
+        "health": 100,
+        "quantity": 20,
+        "tbw": 6,
+        "type": 1,
+        "velocity": 8,
+        "wave": 4
+    },
+    "3": {
+        "gold": 100,
+        "health": 150,
+        "quantity": 20,
+        "tbw": 5,
+        "type": 2,
+        "velocity": 9,
+        "wave": 5
+    }
+}
