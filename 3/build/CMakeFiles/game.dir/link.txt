@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -g -fsanitize=thread CMakeFiles/game.dir/main.cpp.o -o game  Entity/libEntity.a 

@@ -1,0 +1,4 @@
+/home/students/g/gareev.rr/OOP/lab1/build/CMakeFiles/matrix.dir
+/home/students/g/gareev.rr/OOP/lab1/build/CMakeFiles/main.dir
+/home/students/g/gareev.rr/OOP/lab1/build/CMakeFiles/edit_cache.dir
+/home/students/g/gareev.rr/OOP/lab1/build/CMakeFiles/rebuild_cache.dir

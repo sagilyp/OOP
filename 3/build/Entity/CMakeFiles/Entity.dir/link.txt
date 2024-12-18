@@ -1,0 +1,2 @@
+/usr/bin/ar qc libEntity.a CMakeFiles/Entity.dir/Effect.cpp.o CMakeFiles/Entity.dir/Enemy.cpp.o CMakeFiles/Entity.dir/Cell.cpp.o CMakeFiles/Entity.dir/Landscape.cpp.o CMakeFiles/Entity.dir/Game.cpp.o CMakeFiles/Entity.dir/Construction.cpp.o CMakeFiles/Entity.dir/UI.cpp.o
+/usr/bin/ranlib libEntity.a

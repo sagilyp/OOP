@@ -1,0 +1,6 @@
+/home/students/g/gareev.rr/OOP/lab2/build/CMakeFiles/simple_class.dir
+/home/students/g/gareev.rr/OOP/lab2/build/CMakeFiles/difficult_class_dynamic.dir
+/home/students/g/gareev.rr/OOP/lab2/build/CMakeFiles/difficult_class_static.dir
+/home/students/g/gareev.rr/OOP/lab2/build/CMakeFiles/testing.dir
+/home/students/g/gareev.rr/OOP/lab2/build/CMakeFiles/edit_cache.dir
+/home/students/g/gareev.rr/OOP/lab2/build/CMakeFiles/rebuild_cache.dir

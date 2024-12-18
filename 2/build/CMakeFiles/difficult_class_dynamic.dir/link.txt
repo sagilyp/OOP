@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdifficult_class_dynamic.a CMakeFiles/difficult_class_dynamic.dir/domino/difficult_class_dynamic.cpp.o
+/usr/bin/ranlib libdifficult_class_dynamic.a

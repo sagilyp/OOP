@@ -1,0 +1,6 @@
+/home/students/g/gareev.rr/OOP/lab3/build/CMakeFiles/game.dir
+/home/students/g/gareev.rr/OOP/lab3/build/CMakeFiles/edit_cache.dir
+/home/students/g/gareev.rr/OOP/lab3/build/CMakeFiles/rebuild_cache.dir
+/home/students/g/gareev.rr/OOP/lab3/build/Entity/CMakeFiles/Entity.dir
+/home/students/g/gareev.rr/OOP/lab3/build/Entity/CMakeFiles/edit_cache.dir
+/home/students/g/gareev.rr/OOP/lab3/build/Entity/CMakeFiles/rebuild_cache.dir

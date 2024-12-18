@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsimple_class.a CMakeFiles/simple_class.dir/domino/simple_class.cpp.o
+/usr/bin/ranlib libsimple_class.a

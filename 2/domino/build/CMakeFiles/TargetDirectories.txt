@@ -1,0 +1,2 @@
+/home/students/g/gareev.rr/OOP/lab2/domino/build/CMakeFiles/edit_cache.dir
+/home/students/g/gareev.rr/OOP/lab2/domino/build/CMakeFiles/rebuild_cache.dir

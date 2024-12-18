@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdifficult_class_static.a CMakeFiles/difficult_class_static.dir/domino/difficult_class_static.cpp.o
+/usr/bin/ranlib libdifficult_class_static.a
